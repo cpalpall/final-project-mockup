@@ -1,3 +1,15 @@
 body {
- 
+
+}
+
+.ui.inverted.menu {
+  background-color: #12130E;
+}
+
+.ui.middle.aligned.centered.grid.text.container {
+  padding-top: 50px;
+}
+
+#login-buttons a, .accounts-dialog a {
+  color: #FCF8EC;
 }
