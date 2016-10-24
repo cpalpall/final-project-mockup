@@ -1,0 +1,50 @@
+<template name="Create_Profile_Page">
+  <form class="ui form">
+    <h4 class="ui dividing header">Create Profile</h4>
+    <div class="field">
+      <label>Name</label>
+      <div class="two fields">
+        <div class="field">
+          <input type="text" name="first name" placeholder="First Name">
+        </div>
+        <div class="field">
+          <input type="text" name="last name" placeholder="Last Name">
+        </div>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="three fields">
+        <div class="field">
+          <label>Favorite Music Genres</label>
+          <label><input type="checkbox" name="genres"> Rock</label>
+          <label><input type="checkbox" name="genres"> Pop</label>
+          <label><input type="checkbox" name="genres"> Metal</label>
+          <label><input type="checkbox" name="genres"> Electronic</label>
+          <label><input type="checkbox" name="genres"> Alternative</label>
+          <label><input type="checkbox" name="genres"> Country</label>
+        </div>
+
+        <div class="field">
+          <label>Instruments</label>
+          <label><input type="checkbox" name="instruments">Guitar</label>
+          <label><input type="checkbox" name="instruments">Bass</label>
+          <label><input type="checkbox" name="instruments">Drums</label>
+          <label><input type="checkbox" name="instruments">Vocals</label>
+          <label><input type="checkbox" name="instruments">Piano</label>
+        </div>
+
+        <div class="field">
+          <label>Musical Talent</label>
+          <label><input type="radio" name="Talent">Novice</label>
+          <label><input type="radio" name="Talent">Intermediate</label>
+          <label><input type="radio" name="Talent">Professional</label>
+        </div>
+
+        </div>
+    </div>
+
+
+    <button class="ui button" type="submit">Submit</button>
+  </form>
+</template>
