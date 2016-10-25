@@ -12,4 +12,4 @@ import './list-stuff-page.html';
 import './list-stuff-page.js';
 
 import './create-profile-page.html';
-import './create-prifile-page.js';
+import './create-profile-page.js';
