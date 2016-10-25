@@ -1,14 +1,14 @@
 <template name="Edit_Profile_Page">
-  <form class="ui form">
+  <form class="ui form user-data-form {{ errorClass }}">
     <h4 class="ui dividing header">Edit Profile</h4>
     <div class="field">
       <label>Name</label>
       <div class="two fields">
         <div class="field">
-          <input type="text" name="first name" placeholder="First Name">
+          <input type="text" name="first" placeholder="First Name">
         </div>
         <div class="field">
-          <input type="text" name="last name" placeholder="Last Name">
+          <input type="text" name="last" placeholder="Last Name">
         </div>
       </div>
     </div>
@@ -36,15 +36,15 @@
 
         <div class="field">
           <label>Musical Talent</label>
-          <label><input type="radio" name="Talent">Novice</label>
-          <label><input type="radio" name="Talent">Intermediate</label>
-          <label><input type="radio" name="Talent">Professional</label>
+          <label><input type="radio" name="talent">Novice</label>
+          <label><input type="radio" name="talent">Intermediate</label>
+          <label><input type="radio" name="talent">Professional</label>
         </div>
 
-        </div>
+      </div>
     </div>
 
 
-    <button class="ui button" type="submit">Submit</button>
+    <button class="ui button" type="submit">Update</button>
   </form>
 </template>

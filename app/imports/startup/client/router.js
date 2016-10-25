@@ -29,6 +29,20 @@ FlowRouter.route('/add', {
   },
 });
 
+FlowRouter.route('/admin', {
+  name: 'Admin_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Admin_Page' });
+  },
+});
+
+FlowRouter.route('/browse', {
+  name: 'Browse_Users',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Browse_Users' });
+  },
+});
+
 FlowRouter.route('/create-profile', {
   name: 'Create_Profile_Page',
   action() {
@@ -36,10 +50,17 @@ FlowRouter.route('/create-profile', {
   },
 });
 
-FlowRouter.route('/edit-profile/:id', {
+FlowRouter.route('/edit-profile', {
   name: 'Edit_Profile_Page',
   action() {
     BlazeLayout.render('App_Body', { main: 'Edit_Profile_Page' });
+  },
+});
+
+FlowRouter.route('/profile', {
+  name: 'Profile_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Profile_Page' });
   },
 });
 
