@@ -1,0 +1,32 @@
+<template name="Browse_Users">
+  <div class="ui container">
+
+    {{#if Template.subscriptionsReady}}
+    <table style="margin-top: 20px" class="ui celled table">
+      <thead>
+      <tr>
+        <th>First</th>
+        <th>Last</th>
+        <th>Genres</th>
+        <th>Instruments</th>
+        <th>Talent</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      {{#each user in usersList}}
+      <tr>
+        <td>{{user.first}}</td>
+        <td>{{user.last}}</td>
+        <td>{{user.genres}}</td>
+        <td>{{user.intsruments}}</td>
+        <td>{{user.talent}}</td>
+      </tr>
+      {{/each}}
+      </tbody>
+    </table>
+    {{else}}
+    {{> Loading}}
+    {{/if}}
+  </div>
+</template>

@@ -3,31 +3,42 @@ import { SimpleSchema } from 'meteor/aldeed:simple-schema';
 
 /* eslint-disable object-shorthand */
 
-export const User = new Mongo.Collection('User');
+export const Users = new Mongo.Collection('Users');
 
 /**
  * Create the schema for Stuff
  */
-export const UserSchema = new SimpleSchema({
-  name: {
-    label: 'Name',
+export const UsersSchema = new SimpleSchema({
+  first: {
+    label: 'first',
     type: String,
     optional: false,
-    max: 20,
-    autoform: {
-      group: 'User',
-      placeholder: 'Bicycle',
-    },
+    max: 200,
   },
-  quantity: {
-    label: 'Quantity',
-    type: Number,
+  last: {
+    label: 'last',
+    type: String,
     optional: false,
-    autoform: {
-      group: 'User',
-      placeholder: '3',
-    },
+    max: 200,
+  },
+  genres: {
+    label: 'genres',
+    type: String,
+    optional: false,
+    max: 200,
+  },
+  instruments: {
+    label: 'instruments',
+    type: String,
+    optional: false,
+    max: 200,
+  },
+  talent: {
+    label: 'talent',
+    type: String,
+    optional: false,
+    max: 200,
   },
 });
 
-User.attachSchema(UserSchema);
+Users.attachSchema(UsersSchema);

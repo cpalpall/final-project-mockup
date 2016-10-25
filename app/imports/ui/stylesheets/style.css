@@ -13,3 +13,7 @@ body {
 #login-buttons a, .accounts-dialog a {
   color: #FCF8EC;
 }
+
+.li {
+  float: left;
+}
